@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prerender": "ng build --prod && ng build --app 1 && node dist-server/main.*.js"
+    "prerender": "ng build --prod && ng build --app 1 && node dist-server/main.*.js",
+    "deploy": "npm run prerender && firebase deploy"
   },
   "private": true,
   "dependencies": {
